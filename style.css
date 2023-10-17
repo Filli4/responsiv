@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(119, 84, 38);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #6e1d1d;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+  gap: 30px;
+}
+
+.section text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.section img {
+  width: 50%;
+  height: auto;
+  border-radius: 1dvh;
+}
+
+.section img :hover {
+  size-adjust: 20px;
+}
+
+.section img:hover {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+.section1 img {
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+.section1 img:hover {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+.catGrid img:hover {
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.humburger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  .humburger {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+  .section h2 p .section text h2 p .section1 h2 p {
+    font-size: 30%;
+  }
+}
